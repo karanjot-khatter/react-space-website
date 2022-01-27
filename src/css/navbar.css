@@ -59,6 +59,7 @@ hr.line {
     -webkit-backdrop-filter: unset;
             backdrop-filter: unset;
     top: -10px;
+    background-color: #22252F;
   }
   .navbar ul {
     padding-left: 0;
