@@ -6,7 +6,9 @@
 
 body {
 background: url('/src/assets/home/background-home-desktop.jpg'); 
-height: 900px;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
 }
 
 .homepage{
@@ -26,12 +28,89 @@ height: 900px;
         h1 {
             font-size: 150px;
             margin: 0;
-            letter-spacing: 10px;
+            letter-spacing: 20px;
+            font-weight: 300;
         }
 
         p{
             font-size: 18px;
             line-height: 32px;
+            font-weight: 300;
         }
     }
+
+    &_explore-circle{
+        height: 275px;
+        width: 275px;
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        top: 475px;
+        right: 150px;
+        line-height: 275px;
+        text-align: center;
+        font-size: 32px;
+        color: black;
+        letter-spacing: 5px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .homepage_text{
+        width: 60%;
+        text-align: center;
+        left: 25%;
+        top: 150px;
+    }
+
+    .homepage_explore-circle{
+        top: 650px;
+        right: 200px;
+    }
+}
+
+@media (max-width:777px) {
+    .homepage{
+        h3{
+            font-size:16px;
+        }
+
+        h1{
+            font-size:80px;
+        }
+
+        p{
+            font-size: 15px;
+        }
+
+        &_text{
+            color: white;
+            position: absolute;
+            top: 150px;
+            width: 80%;
+            left: 10%;
+            text-align: center;
+        }
+    }
+
+    .homepage_explore-circle{
+        height: 150px;
+        width: 150px;
+        line-height: 150px;
+        font-size: 20px;
+        left: 25%;
+        top: 550px;
+    }
+}
+
+@media (max-width:1024px) {
+    body{
+        background: url('/src/assets/home/background-home-tablet.jpg'); 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+
 }

@@ -26,7 +26,7 @@ hr.line {
 
 .navbar ul {
   position: relative;
-  top: 20px;
+  top: 30px;
 }
 
 .navbar ul li.nav-item {
@@ -42,5 +42,106 @@ hr.line {
 
 .navbar ul li.nav-item a.nav-links span {
   margin-left: 10px;
+}
+
+.navbar ul li.nav-item a.nav-links.active {
+  border-bottom: 3px solid white;
+  padding-bottom: 30px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    background-color: unset;
+    -webkit-backdrop-filter: unset;
+            backdrop-filter: unset;
+    top: -10px;
+  }
+  .navbar ul {
+    padding-left: 0;
+  }
+  strong.nav-item_number {
+    display: none;
+  }
+}
+
+@media (max-width: 777px) {
+  .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: 100%;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    display: none;
+  }
+  .nav-menu.active {
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    left: 0;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 1;
+    display: block;
+    height: 200vh;
+    top: -55px;
+    padding-top: 100px;
+  }
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    padding-bottom: 5px;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .fa-times, .fa-bars {
+    color: #fff;
+    font-size: 2rem;
+  }
+  .navbar ul li.nav-item a.nav-links.active {
+    border-bottom: unset;
+    padding-bottom: 5px;
+  }
+  .navbar ul li.nav-item a.nav-links {
+    margin-left: 0;
+    padding-left: 0;
+    width: unset;
+  }
+}
+
+@media (max-width: 1024px) {
+  hr.line {
+    display: none;
+  }
+  .logo {
+    top: 25px;
+    left: 25px;
+  }
+  .navbar {
+    -webkit-backdrop-filter: unset;
+            backdrop-filter: unset;
+  }
 }
 /*# sourceMappingURL=navbar.css.map */
