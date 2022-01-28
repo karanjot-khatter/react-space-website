@@ -114,3 +114,27 @@ background-size: cover;
 
 
 }
+
+.not-found{
+    position:relative;
+    .description {
+        color: white;
+        position: fixed;
+        top: 25%;
+        left: 50%;
+        text-align: center;
+
+        h1 {
+            font-size: 50px;
+            letter-spacing: 10px;
+        }
+
+        button {
+            background-color: white;
+            border: 0;
+            border-radius: 10px;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    }
+}
