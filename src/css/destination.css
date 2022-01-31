@@ -1,0 +1,122 @@
+body.destination-body {
+  background: url("/src/assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.destination {
+  position: relative;
+}
+
+.destination .left-side {
+  width: 60%;
+  float: left;
+}
+
+.destination .left-side .heading-text {
+  font-size: 28px;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  letter-spacing: 5px;
+}
+
+.destination .left-side .heading-text .number {
+  color: #50525A;
+  padding-right: 20px;
+}
+
+.destination .left-side .heading-text .text {
+  color: white;
+}
+
+.destination img.planet-image {
+  position: relative;
+  top: 200px;
+  left: 200px;
+}
+
+.destination .right-side {
+  float: right;
+  width: 40%;
+}
+
+.destination .right-side ul {
+  position: relative;
+  top: 150px;
+  right: 75px;
+}
+
+.destination .right-side ul li.nav-item {
+  display: inline;
+  letter-spacing: 2px;
+}
+
+.destination .right-side ul li.nav-item a.nav-links {
+  text-decoration: none;
+  color: #D0D6F9;
+  font-size: 14px;
+  margin-left: 25px;
+}
+
+.destination .right-side ul li.nav-item a.nav-links.active {
+  border-bottom: 3px solid white;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.destination .right-side h1 {
+  color: white;
+  font-size: 100px;
+  position: relative;
+  top: 100px;
+  right: 20px;
+  letter-spacing: 15px;
+  font-weight: 200;
+}
+
+.destination .right-side p.planet-description {
+  color: #D0D6F9;
+  width: 80%;
+  position: relative;
+  top: 50px;
+  right: 20px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #D0D6F9;
+  padding-bottom: 50px;
+}
+
+.destination .right-side .distance {
+  top: 100px;
+  position: relative;
+  right: 20px;
+}
+
+.destination .right-side .distance p.desc {
+  color: #D0D6F9;
+}
+
+.destination .right-side .distance h4 {
+  font-size: 28px;
+  margin-top: 0;
+  color: white;
+}
+
+.destination .right-side .travel-time {
+  position: relative;
+  right: -200px;
+  top: -5px;
+}
+
+.destination .right-side .travel-time p.desc {
+  color: #D0D6F9;
+}
+
+.destination .right-side .travel-time h4 {
+  font-size: 28px;
+  margin-top: 0;
+  color: white;
+}
+/*# sourceMappingURL=destination.css.map */

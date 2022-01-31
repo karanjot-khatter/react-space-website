@@ -31,6 +31,7 @@ hr.line {
 
 .navbar ul li.nav-item {
   display: inline;
+  letter-spacing: 2px;
 }
 
 .navbar ul li.nav-item a.nav-links {

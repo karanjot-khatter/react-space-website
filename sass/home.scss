@@ -4,7 +4,7 @@
     font-family: 'Barlow Condensed', sans-serif;
 }
 
-body {
+body.homepage-body {
 background: url('/src/assets/home/background-home-desktop.jpg'); 
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -105,7 +105,7 @@ background-size: cover;
 }
 
 @media (max-width:1024px) {
-    body{
+    body.homepage-body{
         background: url('/src/assets/home/background-home-tablet.jpg'); 
         background-repeat: no-repeat;
         background-attachment: fixed;
