@@ -128,50 +128,66 @@ body.destination-body {
 
 @media (max-width:850px) {
     .destination {
-        .left-side .heading-text {
-        font-size: 28px;
-        position: absolute;
-        top: 100px;
-        left: 75px;
-        letter-spacing: 5px;
-        width: 400px;
+        .left-side {
+            float:unset;
+            width:100%;
+            .heading-text {
+                font-size: 20px;
+                position: absolute;
+                top: 100px;
+                left: 30px;
+                letter-spacing: 5px;
+                width: 400px;
+            }
         }
 
         img.planet-image{
             top: 100px;
-            left: 30px;
+            left: 20%;
+            height: 330px;
         }
 
         .right-side{
             float:unset;
-            width:50%;
+            width:100%;
 
             .distance{
-                right: -100px;
+                left:25%;
+                width:200px;
             }
 
             .travel-time{
-                right: -300px;
+                left:75%;
+                width:200px;
             }
 
             p.planet-description{
                 color: #D0D6F9;
-                width: 300px;
+                width: 80%;
                 position: relative;
                 top: 50px;
-                right: -100px;
+                left:25%;
                 letter-spacing: 2px;
                 border-bottom: 1px solid #D0D6F9;
                 padding-bottom: 50px;
             }
 
             h1{
-                right: -110px;
+                left:25%;
             }
             
             ul{
                 top: 150px;
-                right: -50px;
+                left: 25%;
+                right: 0;
+                padding-left: 0;
+                width: 200px;
+
+                li.nav-item a.nav-links{
+                    margin-left: 0;
+                    margin-right: 25px;
+                }
+
             }
 
             .nav-links{
