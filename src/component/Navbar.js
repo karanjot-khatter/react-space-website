@@ -31,7 +31,7 @@ const Navbar = () => {
                 </Link>
             </li>
             <li className="nav-item">
-                <Link to="/destination" className={location.pathname === '/destination' ? 'nav-links active' : 'nav-links'} >
+                <Link to="/destination" className={location.pathname === '/destination' || location.pathname === '/destination/mars' || location.pathname === '/destination/europa' || location.pathname === '/destination/titan' ? 'nav-links active' : 'nav-links'} >
                     <strong className='nav-item_number'>01</strong>
                     <span>DESTINATION</span>
                 </Link>

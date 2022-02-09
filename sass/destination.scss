@@ -118,3 +118,67 @@ body.destination-body {
         }
     }
 }
+
+
+@media (min-width:851px) and (max-width:1200px) {
+    .destination .right-side {
+        width: 25%;
+    }
+}
+
+@media (max-width:850px) {
+    .destination {
+        .left-side .heading-text {
+        font-size: 28px;
+        position: absolute;
+        top: 100px;
+        left: 75px;
+        letter-spacing: 5px;
+        width: 400px;
+        }
+
+        img.planet-image{
+            top: 100px;
+            left: 30px;
+        }
+
+        .right-side{
+            float:unset;
+            width:50%;
+
+            .distance{
+                right: -100px;
+            }
+
+            .travel-time{
+                right: -300px;
+            }
+
+            p.planet-description{
+                color: #D0D6F9;
+                width: 300px;
+                position: relative;
+                top: 50px;
+                right: -100px;
+                letter-spacing: 2px;
+                border-bottom: 1px solid #D0D6F9;
+                padding-bottom: 50px;
+            }
+
+            h1{
+                right: -110px;
+            }
+            
+            ul{
+                top: 150px;
+                right: -50px;
+            }
+
+            .nav-links{
+                padding:unset;
+                display:unset;
+            }
+        }
+    }
+
+}
