@@ -1,0 +1,106 @@
+body.crew-body {
+  background: url("/src/assets/crew/background-crew-desktop.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.crew {
+  position: relative;
+}
+
+.crew__information {
+  display: none;
+}
+
+.crew__information.selected {
+  display: block;
+}
+
+.crew .left-side {
+  width: 50%;
+  float: left;
+}
+
+.crew .left-side .heading-text {
+  font-size: 28px;
+  position: relative;
+  top: 100px;
+  left: 200px;
+  letter-spacing: 5px;
+}
+
+.crew .left-side .heading-text .number {
+  color: #50525A;
+  padding-right: 20px;
+}
+
+.crew .left-side .heading-text .text {
+  color: white;
+}
+
+.crew .left-side h4 {
+  color: #8F9195;
+  font-size: 32px;
+  font-weight: 400;
+  position: relative;
+  top: 200px;
+  margin: 0;
+  letter-spacing: 2px;
+  left: 200px;
+}
+
+.crew .left-side h1 {
+  color: white;
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  left: 200px;
+  margin: 0;
+  position: relative;
+  top: 220px;
+}
+
+.crew .left-side p {
+  color: #D0D6F9;
+  font-size: 18px;
+  position: relative;
+  top: 250px;
+  left: 200px;
+  width: 50%;
+  margin: 0;
+}
+
+.crew .left-side .nav__dots {
+  z-index: 9;
+  position: relative;
+  left: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 300px;
+}
+
+.crew .left-side .nav__dots .dot {
+  height: 25px;
+  width: 25px;
+  background-color: #363841;
+  margin-right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.crew .left-side .nav__dots .dot.selected {
+  background-color: white;
+}
+
+.crew .right-side {
+  float: right;
+  width: 50%;
+}
+
+.crew .right-side img.person-image {
+  position: relative;
+  top: 100px;
+}
+/*# sourceMappingURL=crew.css.map */

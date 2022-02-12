@@ -6,6 +6,7 @@ import Destination from './pages/Destination';
 import DestinationMars from './pages/DestinationMars';
 import DestinationEuropa from './pages/DestinationEuropa';
 import DestinationTitan from './pages/DestinationTitan';
+import Crew from './pages/Crew';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/destination/mars' element={<DestinationMars/>} />
           <Route path='/destination/europa' element={<DestinationEuropa/>} />
           <Route path='/destination/titan' element={<DestinationTitan/>} />
+          <Route path='/crew' element={<Crew/>} />
           <Route path="*" element={<NotFound/>}></Route>
       </Routes>
     </Router>

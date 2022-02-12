@@ -1,0 +1,106 @@
+body.crew-body {
+    background: url('/src/assets/crew/background-crew-desktop.jpg'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.crew{
+
+    &__information{
+        display:none;
+    }
+
+    &__information.selected{
+        display:block;
+    }
+
+    position:relative;
+    .left-side{
+        width: 50%;
+        float: left;
+
+        .heading-text{
+            font-size:28px;
+            position: relative;
+            top: 100px;
+            left: 200px;
+            letter-spacing: 5px;
+    
+            .number{
+                color: #50525A;
+                padding-right: 20px;
+            }
+    
+            .text{
+                color:white;
+            }
+        }
+
+        h4{
+            color: #8F9195;
+            font-size: 32px;
+            font-weight: 400;
+            position: relative;
+            top: 200px;
+            margin: 0;
+            letter-spacing: 2px;
+            left: 200px;
+        }
+
+        h1{
+            color:white;
+            font-size: 56px;
+            font-weight:400;
+            letter-spacing: 2px;
+            left:200px;
+            margin:0;
+            position:relative;
+            top: 220px;
+        }
+
+        p{
+            color: #D0D6F9;
+            font-size: 18px;
+            position: relative;
+            top: 250px;
+            left: 200px;
+            width: 50%;
+            margin: 0;
+        }
+
+        .nav__dots{
+            z-index: 9;
+            position:relative;
+            left:200px;
+            display: flex;
+            top: 300px;
+
+            .dot{
+                height:25px;
+                width:25px;
+                background-color: #363841;
+                margin-right: 20px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .dot.selected{
+                background-color: white;
+            }
+        }
+        
+    }
+
+
+    .right-side{
+        float: right;
+        width: 50%;
+
+        img.person-image {
+            position: relative;
+            top: 100px;
+        }
+    }
+
+}
