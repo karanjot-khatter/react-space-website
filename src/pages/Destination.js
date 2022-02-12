@@ -22,7 +22,7 @@ appendBodyClass();
         <span className='number'>01</span>
         <span className='text'>PICK YOUR DESTINATION</span>
       </div>
-      <img className="planet-image" src={moonImage} alt="Moon Image" />
+      <img className="planet-image" src={moonImage} alt="Moon" />
     </div>
     <div className='right-side'>
       <ul>
