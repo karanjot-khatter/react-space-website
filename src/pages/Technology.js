@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../component/Navbar';
 import '../css/technology.css';
 import launchVehiclePortrait from '../assets/technology/image-launch-vehicle-portrait.jpg';
+import launchVehicleLandscape from '../assets/technology/image-launch-vehicle-landscape.jpg';
 import SpaceportPortrait from '../assets/technology/image-spaceport-portrait.jpg';
 import SpaceCapsulePortrait from '../assets/technology/image-space-capsule-portrait.jpg';
 import { useLocation } from 'react-router-dom';
@@ -40,6 +41,7 @@ const thirdDotActive = () => {
                 <span className='number'>03</span>
                 <span className='text'>SPACE LAUNCH 101</span>
             </div>
+            <img className="technology-image-mobile" src={launchVehicleLandscape} alt="Launch Vehicle" />
             <div className="nav__dots">
                 <div className='dot selected' id="dot1">1</div>    
                 <div className='dot' id="dot2" onClick={secondDotActive}>2</div>    
@@ -52,7 +54,7 @@ const thirdDotActive = () => {
             </div>
         </div>
         <div className='right-side'>
-            <img className="technology-image" src={launchVehiclePortrait} alt="Launch Vehicle" />
+            <img className="technology-image-desktop" src={launchVehiclePortrait} alt="Launch Vehicle" />
         </div>
     </div>
 
@@ -74,7 +76,7 @@ const thirdDotActive = () => {
             </div>
         </div>
         <div className='right-side'>
-            <img className="technology-image" src={SpaceportPortrait} alt="Spaceport" />
+            <img className="technology-image-desktop" src={SpaceportPortrait} alt="Spaceport" />
         </div>
     </div>
 
@@ -96,7 +98,7 @@ const thirdDotActive = () => {
             </div>
         </div>
         <div className='right-side'>
-            <img className="technology-image" src={SpaceCapsulePortrait} alt="Space capsule" />
+            <img className="technology-image-desktop" src={SpaceCapsulePortrait} alt="Space capsule" />
         </div>
     </div>
 </div>

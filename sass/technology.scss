@@ -20,6 +20,10 @@ body.technology-body {
         width: 60%;
         float: left;
 
+        img.technology-image-mobile{
+            display:none;
+        }
+
         .nav__dots{
             z-index: 9;
             position: relative;
@@ -87,7 +91,7 @@ body.technology-body {
         float:right;
         width: 40%;
 
-        img.technology-image {
+        img.technology-image-desktop {
             position: relative;
             top: 150px;
         }
@@ -95,10 +99,58 @@ body.technology-body {
 }
 
 
-@media (min-width:990px) and (max-width:1300px) {
+@media (min-width:991px) and (max-width:1300px) {
     .technology{
         .technology-info{
             width: 20% !important;
         }
     }
 }
+
+@media (max-width:990px) {
+    .technology {
+        .left-side{
+            float:unset;
+            width:unset;
+            .heading-text {
+                top: 150px;
+                left: 100px;
+            }
+            img.technology-image-mobile{
+                display:block;
+                position: relative;
+                top: 150px;
+                width: 100%;
+            }
+
+            .technology-info{
+                position: relative;
+                left: 35%;
+                top: 300px;
+                width: 70%;
+            }
+
+            .nav__dots {
+                width: unset;
+                display: flex;
+                left: 35%;
+
+
+                .dot{
+                    width:60px;
+                    height:60px;
+                    padding-top: 5px;
+                }
+            }
+        }
+        .right-side {
+            float:unset;
+            width:unset;
+            img.technology-image-desktop{
+                display:none;
+            }
+        }
+    }
+}
+
+
