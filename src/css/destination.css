@@ -71,7 +71,7 @@ body.destination-body {
   color: white;
   font-size: 100px;
   position: relative;
-  top: 100px;
+  top: 150px;
   right: 20px;
   letter-spacing: 15px;
   font-weight: 200;
@@ -81,7 +81,7 @@ body.destination-body {
   color: #D0D6F9;
   width: 80%;
   position: relative;
-  top: 50px;
+  top: 150px;
   right: 20px;
   letter-spacing: 2px;
   border-bottom: 1px solid #D0D6F9;
@@ -89,7 +89,7 @@ body.destination-body {
 }
 
 .destination .right-side .distance {
-  top: 100px;
+  top: 150px;
   position: relative;
   right: 20px;
 }
@@ -107,7 +107,7 @@ body.destination-body {
 .destination .right-side .travel-time {
   position: relative;
   right: -200px;
-  top: -5px;
+  top: 70px;
 }
 
 .destination .right-side .travel-time p.desc {
@@ -160,7 +160,7 @@ body.destination-body {
     color: #D0D6F9;
     width: 80%;
     position: relative;
-    top: 50px;
+    top: 150px;
     left: 25%;
     letter-spacing: 2px;
     border-bottom: 1px solid #D0D6F9;
