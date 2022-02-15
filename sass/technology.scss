@@ -1,0 +1,104 @@
+body.technology-body {
+    background: url('/src/assets/technology/background-technology-desktop.jpg'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.technology{
+    position:relative;
+
+    &__information{
+        display:none;
+    }
+
+    &__information.selected{
+        display:block;
+    }
+
+    .left-side{
+        width: 60%;
+        float: left;
+
+        .nav__dots{
+            z-index: 9;
+            position: relative;
+            left: 200px;
+            top: 250px;
+            width: 100px;
+
+            .dot{
+                height:80px;
+                width:80px;
+                background-color: transparent;
+                border: 1px solid #4D4E55;
+                margin-right: 20px;
+                border-radius: 50%;
+                cursor: pointer;
+                color:white;
+                text-align: center;
+                font-size:32px;
+                padding-top:15px;
+                margin-top: 30px;
+            }
+
+            .dot.selected{
+                background-color: white;
+                border-color:white;
+                color:black;
+            }
+        }
+
+        .heading-text{
+            font-size:28px;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            letter-spacing: 5px;
+    
+            .number{
+                color: #50525A;
+                padding-right: 20px;
+            }
+    
+            .text{
+                color:white;
+            }
+        }
+
+        .technology-info{
+            position: absolute;
+            top: 400px;
+            left: 350px;
+            width: 30%;
+            p{
+                font-size:18px;
+                color: #D0D6F9;
+            }
+
+            h1{
+                color:white;
+                font-size:56px;
+            }
+        }
+    }
+
+    .right-side{
+        float:right;
+        width: 40%;
+
+        img.technology-image {
+            position: relative;
+            top: 150px;
+        }
+    }
+}
+
+
+@media (min-width:990px) and (max-width:1300px) {
+    .technology{
+        .technology-info{
+            width: 20% !important;
+        }
+    }
+}
